@@ -11,7 +11,7 @@ export const App = () => (
   <Router>
     <div>
       <Route path="/" component={Topbar} />
-      <Route path="/" component={Sidebar} />
+      {/* <Route path="/" component={Sidebar} /> */}
       <Route exact path="/" component={Home} />
       <Route path="/about" component={About} />
       <Route path="/" component={Footer} />

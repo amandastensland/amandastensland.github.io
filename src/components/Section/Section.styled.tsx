@@ -1,9 +1,9 @@
 import styled from "styled-components";
 
 export const Root = styled.section`
-  border: 1px solid red;
+  margin: 0 0 50px 0;
 `;
 
 export const Title = styled.h2`
-  color: red;
+
 `;

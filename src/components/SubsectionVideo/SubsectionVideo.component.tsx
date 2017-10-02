@@ -1,12 +1,12 @@
 import React from "react";
-import { SubsectionVideoInterface } from "./SubsectionVideo.interface";
+import { ISubsectionVideo } from "./SubsectionVideo.interface";
 import { Subtitle, Description, Video } from "./SubsectionVideo.styled";
 import { Subsection } from "../Subsection/Subsection.styled";
 
 export const SubsectionVideo = ({ 
   title, 
   description, 
-  video }: SubsectionVideoInterface ) => (
+  video }: ISubsectionVideo ) => (
   <Subsection>
     <Subtitle>{title}</Subtitle>
     <Description>{description}</Description>

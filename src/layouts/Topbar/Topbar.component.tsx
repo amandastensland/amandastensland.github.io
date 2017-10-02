@@ -1,6 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
-import { Logo, Root } from "./Topbar.styled";
+import { Logo, Root, Link } from "./Topbar.styled";
 
 export const Topbar = () => (
   <Root>

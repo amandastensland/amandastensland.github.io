@@ -1,11 +1,11 @@
-import { DatoItemInterface } from "../../interfaces/DatoItem.interface";
-import { SubsectionInterface } from "../Subsection/Subsection.interface";
+import { IDatoItem } from "../../components/DatoItem/DatoItem.interface";
+import { ISubsection } from "../Subsection/Subsection.interface";
 
 interface VideoInterface {
   url: string
 }
 
-export interface SubsectionVideoInterface extends SubsectionInterface {
-  description?: string;
-  video?: VideoInterface;
+export interface ISubsectionVideo extends ISubsection {
+  description: string;
+  video: VideoInterface;
 }

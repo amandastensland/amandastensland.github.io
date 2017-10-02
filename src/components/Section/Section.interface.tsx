@@ -1,9 +1,9 @@
-import { DatoItemInterface } from "../../interfaces/DatoItem.interface";
-import { SubsectionInterface } from "../Subsection/Subsection.interface";
-import { SubsectionTextInterface } from "../SubsectionText/SubsectionText.interface";
-import { SubsectionVideoInterface } from "../SubsectionVideo/SubsectionVideo.interface";
+import { IDatoItem } from "../../components/DatoItem/DatoItem.interface";
+import { ISubsection } from "../Subsection/Subsection.interface";
+import { ISubsectionText } from "../SubsectionText/SubsectionText.interface";
+import { ISubsectionVideo } from "../SubsectionVideo/SubsectionVideo.interface";
 
-export interface SectionInterface extends DatoItemInterface {
+export interface ISection extends IDatoItem {
   title: string;
-  subsections: Array<SubsectionInterface>;
+  subsections: Array<ISubsection>;
 };

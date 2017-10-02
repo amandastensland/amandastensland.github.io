@@ -1,12 +1,17 @@
 var StaticSiteGeneratorPlugin = require("static-site-generator-webpack-plugin");
 var HtmlWebpackPlugin = require("html-webpack-plugin");
 var CopyWebpackPlugin = require("copy-webpack-plugin");
+var path = require("path");
 
 module.exports = {
   devServer: {
     contentBase: `${__dirname}/dist`,
     compress: true,
     port: 9000
+  },
+
+  resolve: {
+    extensions: [ '.ts', '.tsx', '.js', '.yml' ],
   },
   
   entry: "./src/index.tsx",
@@ -21,6 +26,7 @@ module.exports = {
       { test: /\.tsx?$/, loader: "awesome-typescript-loader" },
       { enforce: "pre", test: /\.js$/, loader: "source-map-loader" },
       { test: /\.json$/, loader: "json-loader" },
+      { test: /\.ya?ml$/, include: path.resolve('data'), loader: 'yaml', }
     ]
   },
 

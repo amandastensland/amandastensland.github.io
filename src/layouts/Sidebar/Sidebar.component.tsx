@@ -1,8 +1,7 @@
 import React from "react";
 import { Root, Title, SectionTitle, SubsectionTitle } from "./Sidebar.styled";
-import { sections } from "../../pages/Home/Home.data";
-import { SectionInterface } from "../../components/Section/Section.interface";
-import { SubsectionInterface } from "../../components/Subsection/Subsection.interface";
+import { ISection } from "../../components/Section/Section.interface";
+import { ISubsection } from "../../components/Subsection/Subsection.interface";
 
 export const Sidebar = () => (
   <Root>

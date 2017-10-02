@@ -1,14 +1,14 @@
-import { DatoItemInterface } from "../../interfaces/DatoItem.interface";
-import { SubsectionInterface } from "../Subsection/Subsection.interface";
+import { IDatoItem } from "../../components/DatoItem/DatoItem.interface";
+import { ISubsection } from "../Subsection/Subsection.interface";
 
-interface ContentInterface extends DatoItemInterface {
+interface IContent extends IDatoItem {
   title: string
 }
 
-interface TitleInterface extends ContentInterface {}
+interface ITitle extends IContent {}
 
-interface TextInterface extends ContentInterface {}
+interface IText extends IContent {}
 
-export interface SubsectionTextInterface extends SubsectionInterface {
-  content: Array<ContentInterface>;
+export interface ISubsectionText extends ISubsection {
+  content: string;
 }
