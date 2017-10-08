@@ -1,7 +1,8 @@
-import { IDatoItem } from "../dato-item/dato-item.interface";
-import { ISubsection } from "../subsection/subsection.interface";
-
-export interface IVideo extends ISubsection {
-  description: string;
+export interface IVideo {
+  id: string;
+  title: string;
+  updatedAt: string;
+  itemType: string
+  content: string;
   video: { url: string };
 }

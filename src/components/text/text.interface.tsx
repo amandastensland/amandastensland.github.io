@@ -1,6 +1,7 @@
-import { IDatoItem } from "../dato-item/dato-item.interface";
-import { ISubsection } from "../Subsection/subsection.interface";
-
-export interface IText extends ISubsection {
+export interface IText {
+  id: string;
+  title: string;
+  updatedAt: string;
+  itemType: string;
   content: string;
 }

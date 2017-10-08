@@ -5,7 +5,7 @@ var path = require("path");
 
 module.exports = {
   devServer: {
-    contentBase: `${__dirname}/dist`,
+    contentBase: `${__dirname}`,
     compress: true,
     port: 9000
   },
@@ -18,7 +18,7 @@ module.exports = {
   
   output: {
     filename: "bundle.js",
-    path: `${__dirname}/dist`
+    path: `${__dirname}`
   },
 
   module: {

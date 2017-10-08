@@ -8,10 +8,12 @@ import { Footer } from "./layouts/footer/footer.component";
 import { Container } from "./layouts/container/container.component";
 import "./app.styled";
 
+const index: { title: string } = require("json-loader!yaml-loader!./content/index.yml");
+
 export const App = () => (
   <Router>
     <Container>
-      <Route path="*" component={Topbar} />
+      <Route path="*" render={() => <Topbar title={index.title} />} />
       <Route exact path="/" component={Home} />
       <Route path="/about" component={About} />
       <Route path="*" component={Footer} />

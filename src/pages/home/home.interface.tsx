@@ -1,5 +1,5 @@
-import { ISection } from "../../components/Section/Section.interface";
+import { IBlogPost } from "../../components/blog-post/blog-post.interface";
 
 export interface IHome {
-  sections: ISection[];
+  blogPosts: IBlogPost[];
 }

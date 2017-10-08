@@ -1,7 +1,5 @@
 import React from "react";
 import { Root, Title, SectionTitle, SubsectionTitle } from "./sidebar.styled";
-import { ISection } from "../../components/section/section.interface";
-import { ISubsection } from "../../components/subsection/subsection.interface";
 
 export const Sidebar = () => (
   <Root>

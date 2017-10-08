@@ -1,10 +1,17 @@
 import React from "react";
-import { Logo, Root, Link } from "./topbar.styled";
+import { Logo, Root, TopbarLink, Space } from "./topbar.styled";
+import { ITopbar } from "./topbar.interface";
+import { Link } from "react-router-dom";
 
-export const Topbar = () => (
-  <Root>
-    <Logo>Amanda Stensland</Logo>
-    <Link to="/">Home</Link>
-    <Link to="/about">About</Link>
-  </Root>
-);
+export class Topbar extends React.Component<ITopbar> {
+  render() { 
+    return (
+      <Root>
+        <Logo><Link to="/">{this.props.title}</Link></Logo>
+        <Space />
+        <TopbarLink to="/">Startsida</TopbarLink>
+        {/* <TopbarLink to="/about">Om mig</TopbarLink> */}
+      </Root>
+    );
+  }
+}

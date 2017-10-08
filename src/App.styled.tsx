@@ -7,8 +7,14 @@ injectGlobal`
     background-color: #f1f1f1;
   }
 
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+
   p {
     font-family: Helvetica;
+    margin: 0 0 0.5rem 0;
   }
 
   h1, h2, h3, h4, h5, h6 {

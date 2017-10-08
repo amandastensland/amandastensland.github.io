@@ -1,5 +1,7 @@
-import { ISection } from "../../components/section/section.interface";
+import { IBlock } from "../../components/block/block.interface";
 
 export interface IAbout {
-  sections: ISection[];
+  id: string;
+  itemType: string;
+  content: IBlock[];
 }
