@@ -1,6 +1,8 @@
 import React from "react";
-import { Root } from "./Footer.styled";
+import { Root } from "./footer.styled";
 
 export const Footer = () => (
-  <Root>Footer</Root>
+  <Root>
+    
+  </Root>
 );

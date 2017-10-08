@@ -1,19 +1,19 @@
 import React from "react";
-import { ISection } from "./Section.interface";
-import { Root, Title } from "./Section.styled";
-import { SubsectionVideo } from "../SubsectionVideo/SubsectionVideo.component";
-import { SubsectionText } from "../SubsectionText/SubsectionText.component";
-import { ISubsection } from "../Subsection/Subsection.interface";
-import { ISubsectionVideo } from "../SubsectionVideo/SubsectionVideo.interface";
-import { ISubsectionText } from "../SubsectionText/SubsectionText.interface";
+import { ISection } from "./section.interface";
+import { Root, Title } from "./section.styled";
+import { Video } from "../video/video.component";
+import { Text } from "../text/text.component";
+import { ISubsection } from "../subsection/subsection.interface";
+import { IVideo } from "../video/video.interface";
+import { IText } from "../text/text.interface";
 
 export const Section = ({ title, subsections }: ISection ) => (
   <Root>
     <Title>{title}</Title>
     {subsections.map( (item: ISubsection, i) => {
       switch(item.itemType) {
-        case "subsection_video": return <SubsectionVideo {...(item as ISubsectionVideo)} key={i} />;
-        case "subsection_text": return <SubsectionText {...(item as ISubsectionText)} key={i} />;
+        case "video": return <Video {...(item as IVideo)} key={item.id} />;
+        case "text": return <Text {...(item as IText)} key={item.id} />;
         default: return null;
       }
     })}

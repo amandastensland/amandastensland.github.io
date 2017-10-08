@@ -1,16 +1,20 @@
 import React from "react";
-import styled from "styled-components";
-import { Section } from "../../components/Section/Section.component";
-import { ISection } from "../../components/Section/Section.interface";
-import { Root } from "./Home.styled";
+import { Section } from "../../components/section/section.component";
+import { ISection } from "../../components/section/section.interface";
+import { Root } from "./home.styled";
+import { IHome } from "./home.interface";
+
 const index = require("json-loader!yaml-loader!../../content/index.yml");
 
-export class Home extends React.Component {
+export class Home extends React.Component<IHome> {
+  static defaultProps = {
+    sections: index.sections
+  };
+
   render() {
-    const sections: ISection[] = index.sections;
     return (
       <Root>
-        {sections.map( section => <Section {...section} key={section.id} /> )}
+        {this.props.sections.map( (section: ISection) => <Section {...section} key={section.id} /> )}
       </Root>
     );
   }

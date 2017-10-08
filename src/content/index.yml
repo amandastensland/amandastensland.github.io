@@ -62,19 +62,9 @@ sections:
     position: 1
     subsections:
       - id: '108454'
-        itemType: subsection_text
-        updatedAt: '2017-10-01T10:28:02.447Z'
+        itemType: text_subsection
+        updatedAt: '2017-10-08T11:13:57.951Z'
         seoMetaTags:
-          - tagName: title
-            content: Subsection 1
-          - tagName: meta
-            attributes:
-              property: 'og:title'
-              content: Subsection 1
-          - tagName: meta
-            attributes:
-              name: 'twitter:title'
-              content: Subsection 1
           - tagName: meta
             attributes:
               name: 'twitter:card'
@@ -82,7 +72,7 @@ sections:
           - tagName: meta
             attributes:
               property: 'article:modified_time'
-              content: '2017-10-01T10:28:02Z'
+              content: '2017-10-08T11:13:57Z'
           - tagName: meta
             attributes:
               property: 'og:locale'
@@ -92,10 +82,9 @@ sections:
               property: 'og:type'
               content: article
         content: |-
-          test text
+          # test text
 
           ![Image of Yaktocat](https://octodex.github.com/images/yaktocat.png)
-        title: Subsection 1
     title: Section 1
   - id: '45041'
     itemType: section
