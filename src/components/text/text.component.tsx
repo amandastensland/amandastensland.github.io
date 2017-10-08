@@ -4,7 +4,5 @@ import { Root, Title, Subtitle, P } from "./text.styled";
 import ReactMarkdown from "react-markdown";
 
 export const Text = ({ title, content }: IText ) => (
-  <Root>
-    <ReactMarkdown source={content} />
-  </Root>
+  <ReactMarkdown source={content} />
 );

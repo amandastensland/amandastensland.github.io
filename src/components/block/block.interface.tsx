@@ -3,5 +3,7 @@ export interface IBlock {
   updatedAt: string;
   title: string;
   itemType: string;
-  image?: { url: string }
+  image?: { url: string };
+  url?: string;
+  content?: string;
 }
