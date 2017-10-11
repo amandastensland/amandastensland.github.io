@@ -1,6 +1,17 @@
 import React from "react";
-import { Root, Title, SectionTitle, SubsectionTitle } from "./sidebar.styled";
+import styled from "styled-components";
 
+/**
+ * Styled
+ */
+export const Root = styled.aside``;
+export const Title = styled.h2``;
+export const SectionTitle = styled.h3``;
+export const SubsectionTitle = styled.h3``;
+
+/**
+ * Component
+ */
 export const Sidebar = () => (
   <Root>
     <Title>Sidebar</Title>

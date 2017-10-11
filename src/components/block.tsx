@@ -1,16 +1,26 @@
 import React from "react";
-import { Video } from "../video/video.component";
-import { Text } from "../text/text.component";
-import { IBlock } from "./block.interface";
-import { IVideo } from "../video/video.interface";
-import { IText } from "../text/text.interface";
-import { IImage } from "../image/image.interface";
-import { Image } from "../image/image.component";
-import { Title } from "../title/title.component";
-import { ITitle } from "../title/title.interface";
-import { Article } from "../article/article.component";
-import { IArticle } from "../article/article.interface";
+import { Video, IVideo } from "./video";
+import { Article, IArticle } from "./article";
+import { Title, ITitle } from "./title";
+import { Text, IText } from "./text";
+import { Image, IImage } from "./image";
 
+/**
+ * Types
+ */
+export interface IBlock {
+  id: string;
+  updatedAt: string;
+  title: string;
+  itemType: string;
+  image?: { url: string };
+  url?: string;
+  content?: string;
+}
+
+/**
+ * Component
+ */
 export class Block extends React.Component<IBlock> {
   render() {
     switch(this.props.itemType) {

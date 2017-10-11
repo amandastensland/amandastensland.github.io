@@ -1,7 +1,16 @@
 import React from "react";
-import { Root } from "./container.styled";
+import styled from "styled-components";
 import Helmet from "react-helmet";
 
+/**
+ * Styled
+ */
+export const Root = styled.div`
+`;
+
+/**
+ * Component
+ */
 export class Container extends React.Component {
   render() {    
     return (
