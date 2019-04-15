@@ -1,0 +1,23 @@
+* {
+  border: 1px dashed rgba(153, 92, 21, 0.3);
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  display: grid;
+  grid-gap: 0.8rem;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+}
+header {
+  border: 1px solid #2499154d;
+  background: rgba(224, 226, 88, 1);
+}
+main {
+  border: 1px solid rgba(61, 21, 153, 0.3);
+  background: rgb(173, 173, 158);
+}
+nav {
+  background: rgb(185, 223, 187);
+}
