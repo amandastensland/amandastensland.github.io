@@ -1,23 +1,50 @@
 * {
-  border: 1px dashed rgba(153, 92, 21, 0.3);
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
+html, body {
+  height: 100%;
+}
 body {
-  display: grid;
-  grid-gap: 0.8rem;
-  grid-template-rows: 1fr 1fr;
-  grid-template-columns: 1fr 1fr;
-}
-header {
-  border: 1px solid #2499154d;
-  background: rgba(224, 226, 88, 1);
-}
-main {
-  border: 1px solid rgba(61, 21, 153, 0.3);
-  background: rgb(173, 173, 158);
+  height: 100%;
+  background: #7DA7EB;
+  border: 1rem solid white;
 }
 nav {
   background: rgb(185, 223, 187);
+}
+.shark {
+  padding: 2rem 0;
+  position: absolute;
+  right: 0;
+  animation: shark 1s ease-in-out infinite alternate-reverse;
+}
+
+@keyframes shark {
+  from { 
+    transform: translateY(-1rem);
+  }
+  from {
+    transform: translateY(1rem);
+  }
+}
+
+.speech-bubble {
+  background: white;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  width: 40vw;
+  position: relative;
+  top: 40vh;
+  left: 20vw;
+}
+
+.link-bubble {
+  background: white;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  position: relative;
+  top: 5vh;
+  left: 3vw;
 }
