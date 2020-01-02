@@ -47,11 +47,14 @@
     .div4 > input[type="checkbox"] { display: none; }
     .div4 > label { cursor: pointer; }
     .div4 > label { display: block; }
+    .div4 > label { width: calc(25% - 2%); }
+    .div4 > label { float: left; }
+    .div4 > label { margin: 0 1%; }
     .div4 > label > img { width: 100%; }
     .div4 > label > img { height: 3rem; }
     .div4 > label > img { margin: 1rem 0 .2rem; }
     .div4 > label > img { background: gray; }
-    .div4 > label > img { object-fit: cover; }
+    .div4 > label > img { object-fit: contain; }
     .div4 > input[type="checkbox"]:checked + .popup { display: block; }
     .div4 > .popup { display: none; }
     .div4 > .popup { color: black; }
@@ -119,21 +122,19 @@
 
       <!-- WELCOME -->
       <div class="div3">
-        <h2>QUOTE OF THE WEEK</h2>
+        <h2>ARTWORK OF THE WEEK</h2>
         <blockquote><q>You cannot change what you are, only what you do.</q><footer>—Philip Pullman, <cite>The Golden Compass</cite></blockquote>
       </div> 
 
       <!-- UPDATES -->
       <div class="div4">
-        <h2>UPDATES</h2>
-        <p>Here I post my latest updates of what I'm doing right now!</p>
+        <h2>ARTWORK</h2>
+        <p>Here is a collection of my latest artwork.</p>
         
         <hr>
 
         <label for="POST1">
           <img src="images/girl.png">
-          <h3>PIXEL ART OF THE DAY</h3>
-          <time>1 JAN 2020</time>
         </label>
         <input type="checkbox" id="POST1">
         <div class="popup">
@@ -146,21 +147,93 @@
         </div>
 
         <label for="POST2">
-          <img src="images/bg-1.svg">
-          <h3>DAILY THOUGHTS</h3>
-          <time>2 JAN 2020</time>
+          <img src="images/shark.svg">
         </label>
         <input type="checkbox" id="POST2">
         <div class="popup">
-          <label for="POST2">X</label>
-          <h3>DAILY THOUGHTS</h3>
+          <h3>PIXEL ART OF THE DAY</h3>
           <time>2 JAN 2020</time>
-          <div class="content" style="background-image: url(images/bg-1.png); background-size: cover;">
-            <p>​​“Front-end” essentially means web browser. I consider myself a front-end developer, and I honestly wouldn’t hate it if you called me a web browser developer. But, that probably won’t  catch on (and sort of sounds like you build web browsers). As a front-end developer, you work very closely with web browsers and write the code that runs in them, specifically HTML, CSS, JavaScript, and the handful of other languages that web browsers speak (for instance, media formats like SVG). Or, perhaps even more commonly explained, code that ultimately gets processed into those languages that browsers understand. That’s your territory as a front-end developer! </p>
-            <p>Browsers don’t exist alone, they run on a wide landscape of devices. We learned that through the era of responsive design. And most importantly: users use those browsers on those devices. Nobody is closer to the user than front-end developers. So front-end developers write code for people using browsers that run on a wide variety of devices.</p>
-            <p>Browsers don’t exist alone, they run on a wide landscape of devices. We learned that through the era of responsive design. And most importantly: users use those browsers on those devices. Nobody is closer to the user than front-end developers. So front-end developers write code for people using browsers that run on a wide variety of devices.</p>
-            <p>Browsers don’t exist alone, they run on a wide landscape of devices. We learned that through the era of responsive design. And most importantly: users use those browsers on those devices. Nobody is closer to the user than front-end developers. So front-end developers write code for people using browsers that run on a wide variety of devices.</p>
-            <p>Browsers don’t exist alone, they run on a wide landscape of devices. We learned that through the era of responsive design. And most importantly: users use those browsers on those devices. Nobody is closer to the user than front-end developers. So front-end developers write code for people using browsers that run on a wide variety of devices.</p>
+          <label for="POST2">X</label>
+          <div class="content" style="background-image: url(images/shark.svg); background-size: contain;">
+            <p>Attempt to draw myself.</p>
+          </div>
+        </div>
+
+        <label for="POST3">
+          <img src="images/leaves.jpg">
+        </label>
+        <input type="checkbox" id="POST3">
+        <div class="popup">
+          <h3>PIXEL ART OF THE DAY</h3>
+          <time>2 JAN 2020</time>
+          <label for="POST3">X</label>
+          <div class="content" style="background-image: url(images/leaves.jpg); background-size: contain;">
+            <p>Attempt to draw myself.</p>
+          </div>
+        </div>
+
+        <label for="POST4">
+          <img src="images/bg-1.svg">
+        </label>
+        <input type="checkbox" id="POST4">
+        <div class="popup">
+          <h3>PIXEL ART OF THE DAY</h3>
+          <time>2 JAN 2020</time>
+          <label for="POST4">X</label>
+          <div class="content" style="background-image: url(images/bg-1.svg); background-size: contain;">
+            <p>Attempt to draw myself.</p>
+          </div>
+        </div>
+
+        <label for="POST5">
+          <img src="images/girl.png">
+        </label>
+        <input type="checkbox" id="POST5">
+        <div class="popup">
+          <h3>PIXEL ART OF THE DAY</h3>
+          <time>2 JAN 2020</time>
+          <label for="POST5">X</label>
+          <div class="content" style="background-image: url(images/girl.png); background-size: contain;">
+            <p>Attempt to draw myself.</p>
+          </div>
+        </div>
+
+        <label for="POST6">
+          <img src="images/shark.svg">
+        </label>
+        <input type="checkbox" id="POST6">
+        <div class="popup">
+          <h3>PIXEL ART OF THE DAY</h3>
+          <time>2 JAN 2020</time>
+          <label for="POST6">X</label>
+          <div class="content" style="background-image: url(images/shark.svg); background-size: contain;">
+            <p>Attempt to draw myself.</p>
+          </div>
+        </div>
+
+        <label for="POST7">
+          <img src="images/leaves.jpg">
+        </label>
+        <input type="checkbox" id="POST7">
+        <div class="popup">
+          <h3>PIXEL ART OF THE DAY</h3>
+          <time>2 JAN 2020</time>
+          <label for="POST7">X</label>
+          <div class="content" style="background-image: url(images/leaves.jpg); background-size: contain;">
+            <p>Attempt to draw myself.</p>
+          </div>
+        </div>
+
+        <label for="POST8">
+          <img src="images/bg-1.svg">
+        </label>
+        <input type="checkbox" id="POST8">
+        <div class="popup">
+          <h3>PIXEL ART OF THE DAY</h3>
+          <time>2 JAN 2020</time>
+          <label for="POST8">X</label>
+          <div class="content" style="background-image: url(images/bg-1.svg); background-size: contain;">
+            <p>Attempt to draw myself.</p>
           </div>
         </div>
 
