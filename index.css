@@ -1,0 +1,10 @@
+* { margin: 0; padding: 0; }
+body { background: repeating-linear-gradient(-45deg, white, white 20px, rgb(230, 230, 230) 20px, rgb(230, 230, 230) 40px); background-size: 56px 56px; display: grid; grid-gap: 1rem; padding: 1rem 20%; color: rgb(80, 80, 80) }
+h1 { color: rgb(54, 54, 54); }
+h2 { color: rgb(54, 54, 54); margin-bottom: .7rem; }
+h3 { color: rgb(54, 54, 54); margin-bottom: .7rem; }
+p { margin: 0 0 .5rem; }
+button { padding: .3rem; border-radius: 5px; }
+header { background-color: white; padding: 1rem; border-radius: 5px; border: 5px solid rgb(230, 230, 230); }
+nav { background-color: white; padding: 1rem; border-radius: 5px; border: 5px solid rgb(230, 230, 230); }
+section { background-color: white; padding: 1rem; border-radius: 5px; border: 5px solid rgb(230, 230, 230); }
