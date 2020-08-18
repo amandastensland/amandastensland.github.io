@@ -1,0 +1,11 @@
+.layout.base { display: grid; }
+.layout.base { grid-template-columns: 1fr minmax(20rem, 50rem) 1fr; }
+.layout.base { grid-template-rows: 1fr minmax(10rem, 30rem) 1fr; }
+.layout.base { align-items: center; }
+.layout.base { height: 100%; }
+.layout.page { margin: 2rem 8%; }
+.layout.page .item { margin: 0 0 0.5rem; }
+.layout.page .item { display: block; }
+.layout.page .item { padding: 1rem; }
+.layout.page .item h3 { margin: 0 0 0.5rem; }
+.layout.page h2 { margin: 1rem 0 1rem; }

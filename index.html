@@ -8,72 +8,53 @@
     <meta name="keywords" content="personal">
     <meta name="robots" content="all">
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Amanda Stensland</title>
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="base.css">
+    <link rel="stylesheet" href="theme.css">
+    <link rel="stylesheet" href="layout.css">
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="border.css">
   </head>
-  <body>
-    <header>
+  <body class="layout theme base">
+    <div class="main-border-deco-top">
       <h1>Amanda Stensland</h1>
-    </header>
-    <nav>
-    <li><a href="#">Home</a></li>
-      <li><a href="#">About me</a></li>
-      <li><a href="#">Cat things</a></li>
-      <li><a href="#">Assets</a></li>
-    </nav>
-    <section>
-      <h2>Hi, I'm Amanda!</h2>
-      <p>I'm a web developer that currently works at Bonnier News. I'm specializing in JavaScript and mostly works on and maintains websites.</p>
-    </section>
-    <section>
-      <h2>Articles</h2>
-      <li>How I Setup my Visual Studio Code</li>
-    </section>
-    <section>
-      <h2>Resources</h2>
-      <li>Backgrounds</li>
-    </section>
-    <section>
-      <div>
-        <h2>Developer</h2>
-        <p>I mostly do web development. I do some creative coding and also game development in my freetime.</p>
-        <h3>Languages</h3>
-        <li>JavaScript</li>
-        <li>HTML</li>
-        <li>Pug</li>
-        <li>CSS</li>
-        <li>Sass</li>
-        <li>CoffeeScript</li>
-        <li>Java</li>
-        <br>
-        <h3>Libraries</h3>
-        <li>p5.js</li>
-        <li>React.js</li>
-        <li>Angular.js</li>
-        <li>Node.js</li>
-        <br>
-        <h3>Favorite Tools</h3>
-        <li>Visual Studio Code</li>
-        <li>CodePen</li>
-        <li>GitHub</li>
-        <li>p5.js Online Editor</li>
-        <li>Unity</li>
-      </div>
-      <br><hr><br>
-      <div>
-        <h2>Artist/Designer</h2>
-        <p>I like to create art and design things, both in 2D and 3D.</p>
-        <h3>What I create:</h3>
-        <li>Game Assets</li>
-        <li>Pixel Art</li>
-        <li>Web Designs</li>
-        <br>
-        <h3>Tools I use:</h3>
-        <li>Affinity Designer</li>
-        <li>Affinity Photo</li>
-        <li>Blender</li>
-        <li>Sketch</li>
-      </div>
-    </section>
+      <h2>{ WEBBUTVECKLARE }</h2>
+    </div>
+    <div class="main-border-deco-top-corner-right"></div>
+    <div class="main-border-deco-top-corner-left"></div>
+    <div class="main-border-deco-bottom"></div>
+    <div class="main-border-deco-left"></div>
+    <div class="main-border-deco-right"></div>
+    <div class="main-border-deco-bottom-corner-left"></div>
+    <div class="main-border-deco-bottom-corner-right"></div>
+    <main class="main">
+      <nav class="nav">
+        <ul>
+          <li>
+            <a href="home/index.html" target="iframe-main">Startsida</a>
+          </li>
+          <li>
+            <a href="about/index.html" target="iframe-main">Om mig</a>
+          </li>
+          <li>
+            <a href="posts/katter/index.html" target="iframe-main">Katter</a>
+          </li>
+          <li>
+            <a href="posts/webbutveckling/index.html" target="iframe-main">Webbutveckling</a>
+          </li>
+          <li>
+            <a href="posts/konst-och-illustration/index.html" target="iframe-main">Konst & Illustration</a>
+          </li>
+          <li>
+            <a href="posts/annat/index.html" target="iframe-main">Annat</a>
+          </li>
+        </ul>
+      </nav>
+      <section class="content">
+        <iframe src="home/index.html" name="iframe-main"></iframe>
+      </section>
+    </main>
   </body>
 </html>

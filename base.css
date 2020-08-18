@@ -1,0 +1,16 @@
+* { margin: 0; }
+* { padding: 0; }
+* { box-sizing: border-box; }
+html {height: 100%;width: 100%;}
+body { font-family: 'trebuchet ms'; }
+h2 { margin-bottom: 1rem; }
+h3 { margin: 0.5rem 0; }
+h4 { margin: 0.5rem 0; }
+a { color: black; }
+a { text-decoration: none; }
+a:hover { text-decoration: underline; }
+a:visited { color: black; }
+hr { margin: 1rem 0; }
+iframe { border: none; }
+iframe { height: 100%; }
+iframe { width: 100%; }
