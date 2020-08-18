@@ -1,5 +1,0 @@
-.nav { padding: 1rem; }
-.nav li { list-style-type: none; }
-.nav li { list-style: "→ "; }
-.nav li { margin: 0.5rem 0 0.5rem 1rem; }
-.nav li { font-weight: bold; }
