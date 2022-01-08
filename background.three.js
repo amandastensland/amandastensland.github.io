@@ -1,4 +1,7 @@
 import './style.css'
+import spaceUrl from './images/space.jpg'
+import moonUrl from './images/moon.jpg'
+import moonNormalUrl from './images/moon.normal.jpg'
 import { MathUtils, TextureLoader } from 'three'
 import { SphereGeometry } from 'three'
 import { MeshStandardMaterial } from 'three'
@@ -60,7 +63,7 @@ function addRenderer() {
 
 function addScene() {
   const scene = new Scene()
-  scene.background = new TextureLoader().load('images/space.jpg')
+  scene.background = new TextureLoader().load(spaceUrl)
   return scene
 }
 
@@ -85,8 +88,8 @@ function addAmbientLight() {
 
 function addMoon() {
   const geometry = new SphereGeometry(3, 32, 32)
-  const map = new TextureLoader().load('images/moon.jpg')
-  const normalMap = new TextureLoader().load('images/moon.normal.jpg')
+  const map = new TextureLoader().load(moonUrl)
+  const normalMap = new TextureLoader().load(moonNormalUrl)
   const material = new MeshStandardMaterial({ map, normalMap })
   const mesh = new Mesh(geometry, material)
   mesh.position.z = 30
