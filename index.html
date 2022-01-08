@@ -1,31 +1,46 @@
 <!DOCTYPE html>
-<html style="
-  height: 100%;
-  margin: 0;
-  padding: 0;">
-  <head>
-    <meta charset="utf-8">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About - Amanda Stensland</title>
-    <meta name="author" content="Amanda Stensland">
-    <meta name="description" content="Amanda Stensland's personal website">
-    <link rel="stylesheet" href="https://classless.de/classless-tiny.css">
-    <style>
-      body { padding-bottom: 2rem; }
-    </style>
-  </head>
-  <body class="layout theme page">
-    <h2>Hi 🤓👋</h2>
-    <p>
-      My name is Amanda Stensland, nice to meet you! I'm a web developer currently working with exploring new creative ways to read news online. Feel free to check out some of my personal projects at <a href="https://codepen.io/Diashes">CodePen</a> and <a href="https://github.com/diashes">GitHub</a>.
-    </p>
-    <p>
-      If you are interested – here is a list with the technologies and programming languages I have knowledge in.
-    </p>
-    <hr>
-    <h3>Web Developer</h3>
-    <h4>Languages</h4>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Amanda's Website</title>
+</head>
+
+<body>
+
+  <canvas id="bg"></canvas>
+
+  <main>
+
+    <header class="Header">
+      <div class="HeaderBorder">
+        <h1 class="HeaderTitle">Amanda Stensland</h1>
+      </div>
+      <p class="HeaderParagraph">Web Developer</p>
+    </header>
+
+    <section>
+      <p>
+        My name is Amanda Stensland, nice to meet you!<br/>
+        I'm currently working as a web developer.
+        Feel free to check out some of my personal projects at <a href="https://codepen.io/Diashes">CodePen</a> and <a href="https://github.com/diashes">GitHub</a>.
+      </p>
+    </section>
+
+
+    <blockquote>
+      <p>”Perfection is achieved, not when there is nothing more to add, but when there is nothing left to take away.” – Antonie de Saint-Exupery</p>
+    </blockquote>
+
+    <section class="left">
+      <h2>📜 Manifesto</h2>
+      <img src="images/devmanifesto.webp" alt="Developer Manifesto Poster" style="width: 100%;" />
+    </section>
+
+    <section class="light">
+      <h2>Languages</h2>
     <ul>
       <li>JavaScript</li>
       <li>HTML</li>
@@ -38,7 +53,7 @@
       <li>TypeScript</li>
       <li>Java</li>
     </ul>
-    <h4>Libraries</h4>
+    <h2>Libraries</h2>
     <ul>
       <li>p5.js</li>
       <li>React.js</li>
@@ -48,7 +63,7 @@
       <li>Mocha</li>
       <li>Jest</li>
     </ul>
-    <h4>Tools</h4>
+    <h2>Tools</h2>
     <ul>
       <li>Visual Studio Code</li>
       <li>CodePen</li>
@@ -58,13 +73,13 @@
     <hr>
     <h3>Artist</h3>
     <p>I sometimes like to create art and design things, both in 2D and 3D.</p>
-    <h4>What I create</h4>
+    <h2>What I create</h2>
     <ul>
       <li>Game Assets</li>
       <li>Digital Art</li>
       <li>Web Designs</li>
     </ul>
-    <h4>Tools</h4>
+    <h2>Tools</h2>
     <ul>
       <li>Krita</li>
       <li>Affinity Designer</li>
@@ -73,5 +88,41 @@
       <li>Sketch</li>
       <li>Figma</li>
     </ul>
-  </body>
+
+    </section>
+
+    <blockquote>
+      <p>The best way out is always through <br>-Robert Frost</p>
+    </blockquote>
+
+    <section class="left">
+      <h2>🌮 Work History</h2>
+
+      <h3>Studio3D</h3>
+      <p>
+        2021 - now.
+      </p>
+      <h3>Bonnier News</h3>
+      <p>
+        2018 - 2021.
+      </p>
+      <h3>Publit</h3>
+      <p>
+        2015 - 2018.
+      </p>
+
+    </section>
+
+    <blockquote>
+      <p>Thanks for visiting!</p>
+    </blockquote>
+
+
+  </main>
+
+  <script type="module" src="/background.three.js"></script>
+  <script type="module" src="/header.gsap.js"></script>
+
+</body>
+
 </html>
