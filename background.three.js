@@ -34,7 +34,7 @@ window.addEventListener('resize', onResize)
 animate()
 
 function addStars() {
-  return Array(400)
+  return Array(600)
     .fill()
     .map(() => {
       const geometry = new SphereGeometry(
@@ -49,6 +49,7 @@ function addStars() {
         .map(() => MathUtils.randFloatSpread(100))
       mesh.position.set(x, y, z)
       scene.add(mesh)
+      mesh.originalPosition = { x, y, z }
       return mesh
     })
 }
@@ -108,18 +109,6 @@ function moveCamera() {
   camera.position.y = top * -0.0002
 }
 
-// function addStar() {
-//   const geometry = new SphereGeometry(0.25, 24, 24)
-//   const material = new MeshStandardMaterial({ color: 0xffffff })
-//   const mesh = new Mesh(geometry, material)
-//   const [x, y, z] = Array(3)
-//     .fill()
-//     .map(() => MathUtils.randFloatSpread(100))
-//   mesh.position.set(x, y, z)
-//   scene.add(mesh)
-//   return mesh
-// }
-
 function addParticles() {
   const geometry = new BufferGeometry()
   const material = new PointsMaterial({ color: 0xffffff, size: 1 })
@@ -144,10 +133,25 @@ function animateParticles() {
   particles.rotation.x = mouseY * (clock.getElapsedTime() * 0.00005)
 }
 
+function animateStars() {
+  stars.forEach((star) => {
+    star.position.y = star.originalPosition.y - mouseY * 0.0005
+    star.position.x = star.originalPosition.x - mouseX * 0.0005
+  })
+}
+
 function animate() {
   requestAnimationFrame(animate)
   animateParticles()
+  animateStars()
+  animateMoon()
   renderer.render(scene, camera)
+}
+
+function animateMoon() {
+  moon.rotation.x += 0.00009
+  moon.rotation.y += 0.00009
+  moon.rotation.z += 0.00009
 }
 
 function onResize() {
