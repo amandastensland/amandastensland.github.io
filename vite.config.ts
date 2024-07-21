@@ -20,5 +20,13 @@ export default defineConfig({
             clientPort: hmrRemotePort
         }
     },
-    assetsInclude: ['**/*.glb']
+    assetsInclude: ['**/*.glb'],
+    build: {
+        rollupOptions: {
+            input: {
+                main: 'index.html',
+                sparum: 'sparum/index.html'
+            }
+        }
+    }
 });
