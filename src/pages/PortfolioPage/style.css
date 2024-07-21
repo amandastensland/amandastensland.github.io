@@ -26,6 +26,7 @@ html {
 a {
   color: white;
 }
+
 a:visited {
   color: white;
 }
@@ -50,14 +51,17 @@ blockquote {
   font-weight: 700;
   font-style: normal;
 }
+
 p,
 li {
   font-family: 'Courier New', Courier, monospace;
 }
+
 ul {
   margin-left: 1rem;
   margin-bottom: 1rem;
 }
+
 hr {
   margin: 2rem 0;
 }
@@ -75,14 +79,17 @@ canvas {
   margin-bottom: var(--spacing);
   position: relative;
 }
+
 .HeaderTitle {
   white-space: nowrap;
   clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
 }
+
 .HeaderParagraph {
   clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
   font-family: 'Courier New', Courier, monospace;
 }
+
 .HeaderBorder {
   border-bottom: 1px solid white;
   transform: scaleX(0);
@@ -100,9 +107,11 @@ section {
   line-height: 1.5;
   margin-bottom: var(--spacing);
 }
+
 section h2 {
   margin-bottom: 1rem;
 }
+
 section p {
   margin-bottom: 1rem;
   font-family: 'Courier New', Courier, monospace;
@@ -114,6 +123,7 @@ blockquote {
   grid-column: 2 / span 9;
   margin-bottom: var(--spacing);
 }
+
 blockquote p {
   color: black;
   background-color: #ffffff;

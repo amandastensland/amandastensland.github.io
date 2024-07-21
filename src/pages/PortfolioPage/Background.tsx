@@ -1,7 +1,7 @@
-import './style.css'
-import spaceUrl from './images/space.jpg'
-import moonUrl from './images/moon.jpg'
-import moonNormalUrl from './images/moon.normal.jpg'
+/*
+import spaceUrl from './space.jpg'
+import moonUrl from './moon.jpg'
+import moonNormalUrl from './moon.normal.jpg'
 import { MathUtils, TextureLoader } from 'three'
 import { SphereGeometry } from 'three'
 import { MeshStandardMaterial } from 'three'
@@ -16,7 +16,9 @@ import { BufferGeometry } from 'three'
 import { BufferAttribute } from 'three'
 import { Points } from 'three'
 import { PointsMaterial } from 'three'
+*/
 
+/*
 let mouseX = 0
 let mouseY = 0
 const clock = new Clock()
@@ -86,7 +88,18 @@ function addAmbientLight() {
   scene.add(light)
   return light
 }
+*/
 
+function Moon() {
+  return (
+    <mesh>
+      <sphereGeometry args={[3, 32, 32]} />
+      <meshStandardMaterial />
+    </mesh>
+  )
+}
+
+/*
 function addMoon() {
   const geometry = new SphereGeometry(3, 32, 32)
   const map = new TextureLoader().load(moonUrl)
@@ -158,4 +171,13 @@ function onResize() {
   camera.aspect = window.innerWidth / window.innerHeight
   camera.updateProjectionMatrix()
   renderer.setSize(window.innerWidth, window.innerHeight)
+}
+*/
+
+export default function Background() {
+  return (
+    <>
+      <Moon />
+    </>
+  )
 }
