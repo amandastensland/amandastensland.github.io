@@ -25,7 +25,8 @@ export default defineConfig({
         rollupOptions: {
             input: {
                 main: 'index.html',
-                sparum: 'sparum/index.html'
+                sparum: 'sparum/index.html',
+                sparumOffice: 'sparum-office/index.html'
             }
         }
     }
